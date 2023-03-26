@@ -9,6 +9,11 @@ import Layout from '~/lib/layout';
 import '~/lib/styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  // eslint-disable-next-line no-console
+  console.log(
+    process.env.NEXT_PUBLIC_VERCEL_URL,
+    process.env.NEXT_PUBLIC_SITE_URL
+  );
   return (
     <Chakra>
       <Head>
