@@ -50,7 +50,7 @@ const handler = async (
 
     res.status(200).send({
       message: 'Payment data updated successfully.',
-      data: { hello: 'world' },
+      data: { hello: 'world', ...bankInfo, encrypt: encryptedBankInfo },
     });
   } catch (error) {
     res.status(500).send({
